@@ -18,8 +18,8 @@ import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-folder_path_obs = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/OLR_OBS_RQ1'
-folder_path_era5 = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/OLR_ERA5_RQ1'
+# folder_path_obs = add folder path olr observations
+# folder_path_era5 = add folder path olr era5
 
 csv_files_obs = glob.glob(os.path.join(folder_path_obs, '*.csv'))
 csv_files_sorted_obs = natsort.natsorted(csv_files_obs)

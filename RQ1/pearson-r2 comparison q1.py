@@ -19,8 +19,8 @@ import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-folder_path_obs = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/OLR_OBS_RQ1'
-folder_path_era5 = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/OLR_ERA5_RQ1'
+# folder_path_obs = folder path olr observations
+# folder_path_era5 = 'folder path olr era5
 
 csv_files_obs = glob.glob(os.path.join(folder_path_obs, '*.csv'))
 csv_files_sorted_obs = natsort.natsorted(csv_files_obs)
@@ -40,8 +40,8 @@ for csv_file in csv_files_sorted_era5:
     df['ob_time'] = pd.to_datetime(df['ob_time'])
     era5.append(df)
 
-folder_path_obs_conc = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/concurrent_OBS_RQ1'
-folder_path_era5_conc = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/concurrent_ERA5_RQ1'
+# folder_path_obs_conc = folder path concurrent observations
+# folder_path_era5_conc = folder path concurrent era5
 
 csv_files_obs_conc = glob.glob(os.path.join(folder_path_obs_conc, '*.csv'))
 csv_files_sorted_obs_conc = natsort.natsorted(csv_files_obs_conc)

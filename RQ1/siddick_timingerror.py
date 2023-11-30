@@ -16,8 +16,7 @@ import datetime
 import numpy as np
 from sklearn.metrics import r2_score
 
-folder_path_mcp = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/OLR_OBS_RQ1'
-# folder_path_mcp = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/OLR_OBS_results_Q1_v2'
+# folder_path_mcp = folder path olr results
 csv_files_mcp = glob.glob(os.path.join(folder_path_mcp, '*.csv'))
 csv_files_sorted_mcp = natsort.natsorted(csv_files_mcp)
 

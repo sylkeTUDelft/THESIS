@@ -34,7 +34,7 @@ keys = ["UK1. Dyffryn Brodyn", "UK2. Lifton Down", "UK3. St. Breock", "NL1. Schi
         "NL13. Ten Noorden van de Wadden (TNWB)", "NL14. Dogger Bank zone 3"]
 
 
-folder_path = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/AE_best_weights'
+folder_path = 'C:/folder/path/AE_best_weights'
 
 csv_files = glob.glob(os.path.join(folder_path, '*.csv'))
 csv_files_sorted = natsort.natsorted(csv_files)
@@ -46,9 +46,7 @@ for csv_file in csv_files_sorted:
 
 
 
-folder_path = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS//new_validate_concurrent/OLR_full'
-# folder_path = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/AE_full'
-# folder_path = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/OLR_OBS_results_Q1_v3'
+folder_path = 'C:/folder/path/OLR_full'
 
 csv_files = glob.glob(os.path.join(folder_path, '*.csv'))
 csv_files_sorted = natsort.natsorted(csv_files)
@@ -58,8 +56,7 @@ for csv_file in csv_files_sorted:
     df = pd.read_csv(csv_file)
     OLR.append(df)
 
-folder_path = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/concurrent_full'
-# folder_path = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/concurrent_df_observations_v3'
+folder_path = 'C:/folder/path/concurrent_full'
 
 csv_files = glob.glob(os.path.join(folder_path, '*.csv'))
 csv_files_sorted = natsort.natsorted(csv_files)

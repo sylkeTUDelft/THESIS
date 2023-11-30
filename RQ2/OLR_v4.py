@@ -17,10 +17,9 @@ from sklearn.metrics import r2_score
 
 # get mylist, validate_df and concurrent_df
 
-folder_path_mylist = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/mylist_full'
-# folder_path_mylist2 = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/mylist_observations_v2'
-folder_path_concurrent = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/concurrent_full'
-folder_path_validate = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/validate_full'
+folder_path_mylist = 'C:/folder/path/mylist_full'
+folder_path_concurrent = 'C:/folder/path/concurrent_full'
+folder_path_validate = 'C:/folder/path/validate_full'
 
 csv_files_mylist = glob.glob(os.path.join(folder_path_mylist, '*.csv'))
 csv_files_sorted_mylist = natsort.natsorted(csv_files_mylist)
@@ -126,7 +125,7 @@ for k in range(datasets):
 
 #%%
 for k in range(datasets): 
-    reconstructed[k].to_csv(f'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/OLR_full/{k}_olr_estimate.csv', index=False)
+    reconstructed[k].to_csv(f'C:/folder/path/OLR_full/{k}_olr_estimate.csv', index=False)
 print('saved to csv')    
 
 #%%        

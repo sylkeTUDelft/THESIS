@@ -18,7 +18,7 @@ import natsort
 
 # get mylist
 
-folder_path = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/mylist_full'
+folder_path = 'C:/folder/path/mylist_full'
 
 csv_files = glob.glob(os.path.join(folder_path, '*.csv'))
 csv_files_sorted = natsort.natsorted(csv_files)
@@ -106,8 +106,8 @@ for i in range(datasets):
 
 # #%% create csvs
 for k in range(datasets): 
-    validate[k].to_csv(f'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/validate_full/{k}_validate.csv', index=False)
-    concurrent[k].to_csv(f'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/concurrent_full/{k}_concurrent.csv', index=False)
+    validate[k].to_csv(f'C:/folder/path/validate_full/{k}_validate.csv', index=False)
+    concurrent[k].to_csv(f'C:/folder/path/concurrent_full/{k}_concurrent.csv', index=False)
 
 
 

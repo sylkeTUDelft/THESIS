@@ -16,12 +16,9 @@ import natsort
 
 
 # get mylist, validate_df and concurrent_df
-folder_path_mylist = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/mylist_full'
-folder_path_concurrent = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/concurrent_full'
-folder_path_validate = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/validate_full'
-# folder_path_mylist = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/mylist_v3_era5'
-# folder_path_concurrent = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/concurrent_df_v3_full'
-# folder_path_validate = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/validate_df_v3_full'
+folder_path_mylist = 'C:/folder/path/mylist'
+folder_path_concurrent = 'C:/folder/path/concurrent'
+folder_path_validate = 'C:/folder/path/validate'
 
 
 csv_files_mylist = glob.glob(os.path.join(folder_path_mylist, '*.csv'))

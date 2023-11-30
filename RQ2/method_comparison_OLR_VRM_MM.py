@@ -5,11 +5,6 @@ Created on Tue Aug 15 11:32:53 2023
 @author: sylke
 """
 
-import sys 
-sys.path.append('C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/data_preparation_python/RQ2/Methods')
-sys.path.append('C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/data_preparation_python/RQ2')
-
-
 import pandas as pd
 import numpy as np
 from collections import defaultdict, OrderedDict
@@ -19,10 +14,9 @@ import os
 import glob
 import natsort
 
-folder_path_mcp = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/OLR_full'
-folder_path_vrm = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/VRM_full'
-# folder_path_mcp = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/OLR_ERA5_FULL_results_v2'
-# folder_path_vrm = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/VRM_ERA5_results_v2'
+folder_path_mcp = 'C:/folder/path/OLR_full'
+folder_path_vrm = 'C:/folder/path/VRM_full'
+
 
 csv_files_mcp = glob.glob(os.path.join(folder_path_mcp, '*.csv'))
 csv_files_sorted_mcp = natsort.natsorted(csv_files_mcp)
@@ -42,7 +36,7 @@ for csv_file in csv_files_sorted_vrm:
     df['ob_time'] = pd.to_datetime(df['ob_time'])
     validate_df_VRM.append(df)
     
-folder_path_conc = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/concurrent_full'
+folder_path_conc = 'C:/folder/path/concurrent_full'
 
 csv_files_conc = glob.glob(os.path.join(folder_path_conc, '*.csv'))
 csv_files_sorted_conc = natsort.natsorted(csv_files_conc)

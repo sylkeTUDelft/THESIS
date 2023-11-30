@@ -11,13 +11,13 @@ from sqlalchemy import create_engine
 import datetime
 
 # Connect to the MySQL database
-DB = mysql.connect(user='root', password='06LOG08kat', host='localhost', database='v2_observed')
+DB = mysql.connect(user='user', password='password', host='host', database='database')
 
 # Create the SQLAlchemy engine using the MySQL connection
-user = 'root'
-password = '06LOG08kat'
-host = 'localhost:3306'
-database = 'v2_observed'
+user = 'add user'
+password = 'add password'
+host = 'add host'
+database = 'add database'
 engine = create_engine(f'mysql+mysqlconnector://{user}:{password}@{host}/{database}')
 
 # Define the table names as a list
@@ -264,6 +264,6 @@ for k in range(86):
 
 #%%
 for k in range(86): 
-    mylist[k].to_csv(f'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/mylist_full_OBS/{k}_dataset.csv', index=False)
+    mylist[k].to_csv(f'C:/folder/path/mylist_full_OBS/{k}_dataset.csv', index=False)
 
 

@@ -15,8 +15,8 @@ import glob
 import natsort
 
 
-folder_path_obs_conc = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/concurrent_OBS_RQ1'
-folder_path_era5_conc = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/new_validate_concurrent/concurrent_ERA5_RQ1'
+# folder_path_obs_conc = folder path concurrent observations
+# folder_path_era5_conc = folder path concurrent era5
 
 csv_files_obs_conc = glob.glob(os.path.join(folder_path_obs_conc, '*.csv'))
 csv_files_sorted_obs_conc = natsort.natsorted(csv_files_obs_conc)

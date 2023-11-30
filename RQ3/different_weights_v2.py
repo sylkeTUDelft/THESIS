@@ -21,7 +21,7 @@ import seaborn as sns
 from collections import Counter
 
 
-folder_path = 'C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/1_CSVS/Analogs_results/weights_v2'
+folder_path = 'C:/folder/path/weights_v2'
 
 
 csv_files = glob.glob(os.path.join(folder_path, '*.csv'))

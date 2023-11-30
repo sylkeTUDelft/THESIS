@@ -5,10 +5,6 @@ Created on Wed Aug 16 13:34:55 2023
 @author: sylke
 """
 
-import sys 
-sys.path.append('C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/data_preparation_python/RQ2/Methods')
-sys.path.append('C:/Users/sylke/OneDrive/Documenten/THESIS/DATA/data_preparation_python/RQ2')
-
 
 import pandas as pd
 import numpy as np
